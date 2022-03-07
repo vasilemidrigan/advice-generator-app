@@ -1,0 +1,64 @@
+// Imports
+
+@import "resets";
+@import "variables";
+@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+html,
+body {
+  font-family: Manrope, sans-serif;
+  background-color: $dark-blue;
+  width: 100vw;
+  height: 100vh;
+  @include display-flex(center, center, unset);
+  main {
+    position: relative;
+    background-color: $dark-grayish-blue;
+    border-radius: 20px;
+    width: 90%;
+    min-height: 300px;
+    max-height: auto;
+    .advice__id {
+      @include display-flex(center, center, unset);
+      width: 100%;
+      min-height: 80px;
+      font-size: 0.7em;
+      color: $neon-green;
+      letter-spacing: 0.3em;
+    }
+    .advice__txt {
+      text-align: center;
+      font-size: 1.3em;
+      color: $light-cyan;
+      line-height: 1.5em;
+      margin: 0px 20px;
+    }
+    .hr {
+      @include display-flex(center, center, unset);
+      img {
+        margin: 20px 0 50px 0;
+      }
+    }
+    .button {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      background-color: $neon-green;
+      @include display-flex(center, center, unset);
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 20px $neon-green;
+      }
+      &:active {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+}
