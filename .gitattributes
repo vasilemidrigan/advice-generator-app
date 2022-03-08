@@ -1,2 +1,2 @@
-dist/css/* linguist-vendored
-dist/script/* linguist-vendored
+./dist/css/* linguist-vendored
+./dist/script/* linguist-vendored
