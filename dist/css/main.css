@@ -138,8 +138,6 @@ html,
 body {
   font-family: Manrope, sans-serif;
   background-color: #1f2632;
-  width: 100vw;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,6 +151,8 @@ body {
   -webkit-box-direction: unset;
       -ms-flex-direction: unset;
           flex-direction: unset;
+  width: 100vw;
+  height: 100vh;
 }
 
 html main,
@@ -160,6 +160,8 @@ body main {
   position: relative;
   background-color: #323a49;
   border-radius: 20px;
+  min-width: 350px;
+  max-width: 400px;
   width: 90%;
   min-height: 300px;
   max-height: auto;

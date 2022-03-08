@@ -9,13 +9,15 @@ html,
 body {
   font-family: Manrope, sans-serif;
   background-color: $dark-blue;
+  @include display-flex(center, center, unset);
   width: 100vw;
   height: 100vh;
-  @include display-flex(center, center, unset);
   main {
     position: relative;
     background-color: $dark-grayish-blue;
     border-radius: 20px;
+    min-width: 350px;
+    max-width: 400px;
     width: 90%;
     min-height: 300px;
     max-height: auto;
